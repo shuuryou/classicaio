@@ -384,6 +384,10 @@ You can send these characters to the serial port to initiate button presses and 
 
 [Here's a short video showing a test of the serial communication](https://vimeo.com/manage/videos/816704722).
 
+There currently isn't any software to provide a rich graphical user interface for screen control like the iMac G3 and eMac projects have, because I found that simply using software like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and opening a serial connection using the default settings (e.g. COM4, 9600bps) is enough. Once the connection is established, just press one of the above buttons on your keyboard to control the LCD driver boards's on-screen display.
+
+![PuTTY used for OSD control](https://github.com/shuuryou/classicaio/assets/36278767/8458b692-bb50-4167-834c-56bf05bf5956)
+
 #### Power Button Warning
 Triggering the power button will turn off the display via its driver board. The driver board remembers its power state, so even a reboot or power cycle will not cause the display to come back to life. The only way to turn on the display again is by triggering the power button a second time. Please keep this in mind in case you have no network or remote access set up.
 
